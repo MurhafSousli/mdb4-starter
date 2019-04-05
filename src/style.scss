@@ -1,3 +1,23 @@
-body {
-  background: whitesmoke;
+.navbar {
+  z-index: 1;
+}
+
+html,
+body,
+header,
+.jarallax {
+  height: 100%;
+}
+
+@media (max-width: 740px) {
+  html,
+  body,
+  header,
+  .jarallax {
+    height: 100vh;
+  }
+}
+
+h5 {
+  letter-spacing: 3px;
 }

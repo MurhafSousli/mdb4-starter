@@ -4,7 +4,8 @@
   "description": "Material Design Bootstrap 4 Starter",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "clean": "rm -r dist"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
     "mdbootstrap": "^4.7.6",
     "node-waves": "^0.7.6",
     "popper.js": "^1.14.7",
+    "toastr": "^2.1.4",
     "wow.js": "^1.2.2"
   }
 }
