@@ -7,9 +7,21 @@ import 'mdbootstrap/scss/mdb.lite.scss';
  * To fix this issue, you need to import each icon fro mthe library
  * Uncomment the following line, then uncomment the line after to import each icon 
  */
-import '@fortawesome/fontawesome-free/js/all.js';
+import '@fortawesome/fontawesome-free/js/all';
 // import './icons';
 
+/**
+ * For Notification / Toast, impot toastr library and its styles
+ */ 
+import 'toastr/toastr.scss';
+import Toastr from 'toastr/toastr';
+window.toastr = Toastr;
+
+/**
+ * To use Wow.js
+ */
+import WOW from 'wow.js/dist/wow';
+new WOW().init();
 
 // Prepare each library for import
 const importJQuery = import('jquery/dist/jquery').then(($) => {
@@ -52,5 +64,4 @@ function appReady() {
  */
 (async () => {
   await loadDependancies();
-  appReady();
 })();
