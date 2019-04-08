@@ -19,7 +19,8 @@ This starts the Parcel development server with Hot Module Replacement enabled an
 
 ## Features
 
-- Pretty fast to serve and build.
+- Parcel serves and builds fast.
+- Supports ES6.
 - Converts SCSS/SASS files to CSS.
 - Removal of comments (Special comments preserved).
 - Optimizing filenames & assets.
