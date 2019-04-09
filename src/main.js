@@ -11,17 +11,17 @@ import '@fortawesome/fontawesome-free/js/all';
 // import './icons';
 
 /**
- * For Notification / Toast, impot toastr library and its styles
+ * To use Notification / Toast, uncomment the following lines
  */ 
-import 'toastr/toastr.scss';
-import Toastr from 'toastr/toastr';
-window.toastr = Toastr;
+// import 'toastr/toastr.scss';
+// import Toastr from 'toastr/toastr';
+// window.toastr = Toastr;
 
 /**
- * To use Wow.js
+ * To use Wow.js, uncomment the following lines:
  */
-import WOW from 'wow.js/dist/wow';
-new WOW().init();
+// import WOW from 'wow.js/dist/wow';
+// new WOW().init();
 
 // Prepare each library for import
 const importJQuery = import('jquery/dist/jquery').then(($) => {
@@ -48,15 +48,6 @@ async function loadDependancies() {
 
   // Load app.js  
   await import('./app');
-}
-
-/**
- * Runs when all scripts are loaded
- */
-function appReady() {
-  // Initialize commands
-  $('[data-toggle="tooltip"]').tooltip();
-  $('[data-toggle="popover"]').popover();
 }
 
 /**
