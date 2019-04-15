@@ -13,20 +13,56 @@
 </head>
 
 <body>
-  <!-- Start your project here-->
-  <div style="height: 100vh">
-    <div class="flex-center flex-column">
+<!-- Toolbar -->
+<nav class="navbar fixed-top navbar-dark primary-color">
+  <a class="navbar-brand" href="#">Shopping Cart Example</a>
+</nav>
 
-      <h1 class="text-hide animated fadeIn mb-4"
-        style="background-image: url('https://mdbootstrap.com/img/logo/mdb-transparent-250px.png'); width: 250px; height: 90px;">
-        MDBootstrap</h1>
-      <h5 class="animated fadeIn mb-3">Thank you for using our product. We're glad you're with us.</h5>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8">
 
-      <p class="animated fadeIn text-muted">MDB Team</p>
+      <!-- Shopping list -->
+      <div id="shopping-list" class="d-flex flex-wrap"></div>
+
+    </div>
+    <div class="col-lg-4">
+
+      <!-- Shopping cart -->
+      <div class="shopping-cart-container card card-cascade position-sticky my-3 overflow-hidden">
+
+        <!-- Shopping cart title -->
+        <div class="shopping-cart-title view view-cascade blue text-white">
+          <h6 class="card-header-title mb-0">Cart</h6>
+        </div>
+
+        <!-- Card content -->
+        <div class="card-body card-body-cascade">
+          <ul id="shopping-cart" class="list-group">
+            <li class="list-group-item p-2">
+              <div id="shopping-cart-info"
+                   class="card-header-subtitle text-monospace d-flex justify-content-between align-items-center">
+              </div>
+            </li>
+          </ul>
+          <hr>
+
+          <!-- Card buttons -->
+          <div class="cart-actions d-flex">
+            <button id="clear-button" type="button" class="btn btn-md btn-blue-grey waves-effect waves-light flex-1 m-0 mr-3">
+              <i class="far fa-trash-alt mr-1"></i> Clear
+            </button>
+
+            <button id="checkout-button" type="button" class="btn btn-md btn-success waves-effect waves-light flex-1 m-0">
+              <i class="fas fa-shopping-cart mr-1"></i>  Check out
+            </button>
+          </div>
+
+        </div>
+      </div>
     </div>
   </div>
-  <!-- /Start your project here-->
-
+</div>
 </body>
 
 </html>

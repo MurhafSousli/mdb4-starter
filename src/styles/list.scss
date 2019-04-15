@@ -1,0 +1,15 @@
+.card-body {
+  padding: 0.7rem;
+  h5 {
+    font-size: $card-font-size;
+    font-weight: bold;
+  }
+  p {
+    font-size: $card-font-size;
+  }
+}
+
+.list-item {
+  flex: 1 0 12em;
+}
+

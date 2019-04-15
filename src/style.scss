@@ -1,23 +1,18 @@
-.navbar {
-  z-index: 1;
+@import './styles/variables.scss';
+@import './styles/list.scss';
+@import './styles/cart.scss';
+
+body {
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+  background-color: $bg-color !important;
 }
 
-html,
-body,
-header,
-.jarallax {
-  height: 100%;
+.container {
+  margin-top: 5em;
 }
 
-@media (max-width: 740px) {
-  html,
-  body,
-  header,
-  .jarallax {
-    height: 100vh;
-  }
+.card img {
+  object-fit: cover;
 }
 
-h5 {
-  letter-spacing: 3px;
-}
